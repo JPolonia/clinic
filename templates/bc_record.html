@@ -123,13 +123,13 @@
                                             <div class="form-group row">
                                                 <label for="idade" class="col-2 col-form-label text-right">Idade:</label>
                                                 <div class="col-10">
-                                                    <input disabled type="number" class="form-control mw-5" id="idade" placeholder="48">
+                                                    <input disabled type="number" class="form-control mw-5 min-w-45px" id="idade" placeholder="48">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label for="estadoCivil" class="col-2 col-form-label text-right">Estado Civil:</label>
                                                 <div class="col-10">
-                                                    <input type="text" class="form-control mw-5" id="estadoCivil" placeholder="Casado">
+                                                    <input type="text" class="form-control mw-20" id="estadoCivil" placeholder="Casado">
                                                 </div>
                                             </div>
                                         </div>
@@ -189,6 +189,9 @@
                                                         <option>BI-RADS 4</option>
                                                         <option>BI-RADS 5</option>
                                                     </select>
+                                                    <div class="form-check">
+                                                        <input checked class="form-check-input position-static ml-2" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="form-inline">
@@ -201,6 +204,9 @@
                                                         <option>BI-RADS 4</option>
                                                         <option>BI-RADS 5</option>
                                                     </select>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static ml-2" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="form-inline">
@@ -213,6 +219,9 @@
                                                         <option>BI-RADS 4</option>
                                                         <option>BI-RADS 5</option>
                                                     </select>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static ml-2" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="form-inline">
@@ -225,6 +234,9 @@
                                                         <option>BI-RADS 4</option>
                                                         <option>BI-RADS 5</option>
                                                     </select>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static ml-2" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -240,10 +252,49 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="menu4" role="tabpanel" aria-labelledby="menu4-tab">
-
+                                    <div id="accordion">
+                                        <div class="card">
+                                          <div class="card-header">
+                                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                              Collapsible Group Item #1
+                                            </a>
+                                          </div>
+                                          <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                            <div class="card-body">
+                                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card">
+                                          <div class="card-header">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                            Collapsible Group Item #2
+                                          </a>
+                                          </div>
+                                          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                            <div class="card-body">
+                                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card">
+                                          <div class="card-header">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                              Collapsible Group Item #3
+                                            </a>
+                                          </div>
+                                          <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                            <div class="card-body">
+                                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                 </div>
                                 <div class="tab-pane fade" id="menu5" role="tabpanel" aria-labelledby="menu5-tab">...</div>
-                                <div class="tab-pane fade" id="menu6" role="tabpanel" aria-labelledby="menu6-tab">...</div>
+                                <div class="tab-pane fade" id="menu6" role="tabpanel" aria-labelledby="menu6-tab">
+                                    
+                                </div>
                                 <div class="tab-pane fade" id="menu7" role="tabpanel" aria-labelledby="menu7-tab">...</div>
                                 <div class="tab-pane fade" id="menu8" role="tabpanel" aria-labelledby="menu8-tab">...</div>
                                 <div class="tab-pane fade" id="menu9" role="tabpanel" aria-labelledby="menu9-tab">...</div>

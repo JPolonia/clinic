@@ -52,16 +52,23 @@ input[type="date"]::-webkit-outer-spin-button {
 	width: 12% !important;
 }
 .mw-12 {
-	Max-width: 12% !important;
+	max-width: 12% !important;
 }
 .w-20 {
 	width: 20% !important;
+}
+.mw-20 {
+	max-width: 20% !important;
 }
 .w-30 {
 	width: 30% !important;
 }
 .w-40 {
 	width: 40% !important;
+}
+
+.min-w-45px{
+	min-width: 45px !important;
 }
 
 .min-w-85px{
