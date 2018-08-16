@@ -39,6 +39,9 @@ input[type="date"]::-webkit-outer-spin-button {
 .w-5 {
 	width: 5% !important;
 }
+.mw-5 {
+	max-width: 5% !important;
+}
 .w-8 {
 	width: 8% !important;
 }
@@ -59,6 +62,22 @@ input[type="date"]::-webkit-outer-spin-button {
 }
 .w-40 {
 	width: 40% !important;
+}
+
+.min-w-85px{
+	min-width: 85px !important;
+}
+
+.min-w-100px{
+	min-width: 100px !important;
+}
+
+.flex-end{
+	justify-content: flex-end !important;
+}
+
+.text-right{
+	text-align: right;
 }
 
 /*LOGIN*/

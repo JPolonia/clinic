@@ -79,167 +79,161 @@
 
                             <div class="tab-content border border-top-0 p-3" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="menu1" role="tabpanel" aria-labelledby="menu1-tab">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="simRadioRastreio" value="option1" checked>
-                                                    <label class="form-check-label" for="simRadioRastreio">Sim</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="naoRadioRastreio" value="option2">
-                                                    <label class="form-check-label" for="naoRadioRastreio">Não</label>
-                                                </div>
-                                                <div class="form-inline">
-                                                    <div class="form-group mt-2">
-                                                        <label for="idRastreio" class="mr-2">Identificação(Nº/Conc./Volta):</label>
-                                                        <input type="text" class="form-control" id="idRastreio" placeholder="Ex:10023/Porto/203">
-                                                    </div>
-                                                </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="simRadioRastreio" value="option1" checked>
+                                                <label class="form-check-label" for="simRadioRastreio">Sim</label>
                                             </div>
-                                            <div class="col">
-                                                <div class="form-inline">
-                                                    <div class="form-group">
-                                                        <label for="dataAfericao" class="mr-2">Data de Aferição:</label>
-                                                        <input type="date" class="form-control" id="dataAfericao">
-                                                    </div>
-                                                </div>
-                                                <div class="form-inline">
-                                                    <div class="form-group mt-3">
-                                                        <label for="dataRastreio" class="mr-2">Data de Rastreio:</label>
-                                                        <input type="date" class="form-control" id="dataRastreio">
-                                                    </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="naoRadioRastreio" value="option2">
+                                                <label class="form-check-label" for="naoRadioRastreio">Não</label>
+                                            </div>
+                                            <div class="form-inline">
+                                                <div class="form-group mt-2">
+                                                    <label for="idRastreio" class="mr-2">Identificação(Nº/Conc./Volta):</label>
+                                                    <input type="text" class="form-control" id="idRastreio" placeholder="Ex:10023/Porto/203">
                                                 </div>
                                             </div>
                                         </div>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="form-inline">
-                                                    <div class="form-group">
-                                                        <label for="morada" class="mr-2">Residência:</label>
-                                                        <input type="text" class="form-control" id="morada" placeholder="Ex:Av.Oliveira Martins 69B">
-                                                    </div>
+                                        <div class="col">
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                    <label for="dataAfericao" class="mr-2">Data de Aferição:</label>
+                                                    <input type="date" class="form-control" id="dataAfericao">
                                                 </div>
-                                                <div class="form-inline">
-                                                    <div class="form-group mt-3">
-                                                        <label for="idade" class="mr-2">Idade:</label>
-                                                        <input disabled type="number" class="form-control" id="idade" placeholder="51">
-                                                    </div>
+                                            </div>
+                                            <div class="form-inline">
+                                                <div class="form-group mt-3">
+                                                    <label for="dataRastreio" class="mr-2">Data de Rastreio:</label>
+                                                    <input type="date" class="form-control" id="dataRastreio">
                                                 </div>
-                                                <div class="form-inline">
-                                                    <div class="form-group mt-3">
-                                                        <label for="dataAfericao" class="mr-2">Estado Civil:</label>
-                                                        <input type="date" class="form-control" id="dataAfericao" placeholder="Casado">
-                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row ">
+                                        <div class="col">
+                                            <div class="form-group row">
+                                                <label for="morada" class="col-2 col-form-label text-right">Residência:</label>
+                                                <div class="col-10">
+                                                    <input type="text" class="form-control" id="morada" placeholder="Ex:Av.Oliveira Martins 69B">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="idade" class="col-2 col-form-label text-right">Idade:</label>
+                                                <div class="col-10">
+                                                    <input disabled type="number" class="form-control mw-5" id="idade" placeholder="48">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="estadoCivil" class="col-2 col-form-label text-right">Estado Civil:</label>
+                                                <div class="col-10">
+                                                    <input type="text" class="form-control mw-5" id="estadoCivil" placeholder="Casado">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="menu2" role="tabpanel" aria-labelledby="menu2-tab">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <label for="localizacaoSelectMamaD">Mama Direita</label>
-                                                    <select class="form-control" id="localizacaoSelectMamaD">
-                                                        <option>QSE</option>
-                                                        <option>QSI</option>
-                                                        <option>QII</option>
-                                                        <option>QIE</option>
-                                                        <option>TQS</option>
-                                                        <option>TQInf</option>
-                                                        <option>TQE</option>
-                                                        <option>TQInt</option>
-                                                        <option>Central</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <label for="localizacaoSelectMamaE">Mama Esquerda</label>
-                                                    <select class="form-control" id="localizacaoSelectMamaE">
-                                                        <option>QSE</option>
-                                                        <option>QSI</option>
-                                                        <option>QII</option>
-                                                        <option>QIE</option>
-                                                        <option>TQS</option>
-                                                        <option>TQInf</option>
-                                                        <option>TQE</option>
-                                                        <option>TQInt</option>
-                                                        <option>Central</option>
-                                                    </select>
-                                                </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="localizacaoSelectMamaD">Mama Direita</label>
+                                                <select class="form-control" id="localizacaoSelectMamaD">
+                                                    <option>QSE</option>
+                                                    <option>QSI</option>
+                                                    <option>QII</option>
+                                                    <option>QIE</option>
+                                                    <option>TQS</option>
+                                                    <option>TQInf</option>
+                                                    <option>TQE</option>
+                                                    <option>TQInt</option>
+                                                    <option>Central</option>
+                                                </select>
                                             </div>
                                         </div>
-                                        <div class="row justify-content-md-center">
-                                            <div class="text-center">
-                                                <img src="../clinic/images/BCRecord/breast_draw.png" class="img-fluid" alt="Responsive image">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="localizacaoSelectMamaE">Mama Esquerda</label>
+                                                <select class="form-control" id="localizacaoSelectMamaE">
+                                                    <option>QSE</option>
+                                                    <option>QSI</option>
+                                                    <option>QII</option>
+                                                    <option>QIE</option>
+                                                    <option>TQS</option>
+                                                    <option>TQInf</option>
+                                                    <option>TQE</option>
+                                                    <option>TQInt</option>
+                                                    <option>Central</option>
+                                                </select>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-md-center">
+                                        <div class="text-center">
+                                            <img src="../clinic/images/BCRecord/breast_draw.png" class="img-fluid" alt="Responsive image">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="menu3" role="tabpanel" aria-labelledby="menu3-tab">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <div class="form-inline">
-                                                    <div class="form-group">
-                                                        <label for="mamografiaSelect" class="mr-2">Mamografia:</label>
-                                                        <select class="form-control" id="mamografiaSelect">
-                                                            <option>BI-RADS 1</option>
-                                                            <option>BI-RADS 2</option>
-                                                            <option>BI-RADS 3</option>
-                                                            <option>BI-RADS 4</option>
-                                                            <option>BI-RADS 5</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-inline">
-                                                    <div class="form-group">
-                                                        <label for="ecografiaSelect" class="mr-2">Ecografia:</label>
-                                                        <select class="form-control" id="ecografiaSelect">
-                                                            <option>BI-RADS 1</option>
-                                                            <option>BI-RADS 2</option>
-                                                            <option>BI-RADS 3</option>
-                                                            <option>BI-RADS 4</option>
-                                                            <option>BI-RADS 5</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-inline">
-                                                    <div class="form-group">
-                                                        <label for="RMSelect" class="mr-2">RM:</label>
-                                                        <select class="form-control" id="RMSelect">
-                                                            <option>BI-RADS 1</option>
-                                                            <option>BI-RADS 2</option>
-                                                            <option>BI-RADS 3</option>
-                                                            <option>BI-RADS 4</option>
-                                                            <option>BI-RADS 5</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-inline">
-                                                    <div class="form-group">
-                                                        <label for="tomosinteseSelect" class="mr-2">Tomosintese:</label>
-                                                        <select class="form-control" id="tomosinteseSelect">
-                                                            <option>BI-RADS 1</option>
-                                                            <option>BI-RADS 2</option>
-                                                            <option>BI-RADS 3</option>
-                                                            <option>BI-RADS 4</option>
-                                                            <option>BI-RADS 5</option>
-                                                        </select>
-                                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                    <label for="mamografiaSelect" class="mr-2 min-w-100px flex-end">Mamografia:</label>
+                                                    <select class="form-control" id="mamografiaSelect">
+                                                        <option>BI-RADS 1</option>
+                                                        <option>BI-RADS 2</option>
+                                                        <option>BI-RADS 3</option>
+                                                        <option>BI-RADS 4</option>
+                                                        <option>BI-RADS 5</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                            <div class="col-8">
-                                                <div class="row justify-content-md-center">
-                                                    <div class="text-center">
-                                                        <img src="../clinic/images/BCRecord/mamography_example.jpg" class="img-fluid" alt="Responsive image">
-                                                        <hr>
-                                                        <input type="range" class="form-control-range" id="formControlRange">
-                                                    </div>
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                    <label for="ecografiaSelect" class="mr-2 min-w-100px flex-end">Ecografia:</label>
+                                                    <select class="form-control" id="ecografiaSelect">
+                                                        <option>BI-RADS 1</option>
+                                                        <option>BI-RADS 2</option>
+                                                        <option>BI-RADS 3</option>
+                                                        <option>BI-RADS 4</option>
+                                                        <option>BI-RADS 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                    <label for="RMSelect" class="mr-2 min-w-100px flex-end">RM:</label>
+                                                    <select class="form-control" id="RMSelect">
+                                                        <option>BI-RADS 1</option>
+                                                        <option>BI-RADS 2</option>
+                                                        <option>BI-RADS 3</option>
+                                                        <option>BI-RADS 4</option>
+                                                        <option>BI-RADS 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                    <label for="tomosinteseSelect" class="mr-2 min-w-100px flex-end">Tomosintese:</label>
+                                                    <select class="form-control" id="tomosinteseSelect">
+                                                        <option>BI-RADS 1</option>
+                                                        <option>BI-RADS 2</option>
+                                                        <option>BI-RADS 3</option>
+                                                        <option>BI-RADS 4</option>
+                                                        <option>BI-RADS 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="row justify-content-md-center">
+                                                <div class="text-center">
+                                                    <img src="../clinic/images/BCRecord/mamography_example.jpg" class="img-fluid" alt="Responsive image">
+                                                    <hr>
+                                                    <input type="range" class="form-control-range" id="formControlRange">
                                                 </div>
                                             </div>
                                         </div>
