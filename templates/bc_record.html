@@ -190,7 +190,8 @@
                                                         <option>BI-RADS 5</option>
                                                     </select>
                                                     <div class="form-check">
-                                                        <input checked class="form-check-input position-static ml-2" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                                                        <input checked class="form-check-input position-static ml-2" type="radio" name="blankRadio" id="blankRadio1" value="option1"
+                                                            aria-label="...">
                                                     </div>
                                                 </div>
                                             </div>
@@ -245,7 +246,7 @@
                                                 <div class="text-center">
                                                     <img src="../clinic/images/BCRecord/mamography_example.jpg" class="img-fluid" alt="Responsive image">
                                                     <hr>
-                                                    <input type="range" class="form-control-range" id="formControlRange">
+                                                    <input type="range" class="custom-range" id="customRange1">
                                                 </div>
                                             </div>
                                         </div>
@@ -254,50 +255,316 @@
                                 <div class="tab-pane fade" id="menu4" role="tabpanel" aria-labelledby="menu4-tab">
                                     <div id="accordion">
                                         <div class="card">
-                                          <div class="card-header">
-                                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                              Collapsible Group Item #1
-                                            </a>
-                                          </div>
-                                          <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                                            <div class="card-body">
-                                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            <div class="card-header">
+                                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                                    1ª Biopsia
+                                                </a>
                                             </div>
-                                          </div>
+                                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <div class="form-inline">
+                                                        <div class="form-group ">
+                                                            <label for="data1Biopsia" class="mr-2">Data:</label>
+                                                            <input type="date" class="form-control" id="data1Biopsia">
+                                                        </div>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="row">
+                                                        <div class="col border">
+                                                            <div class="row pt-2">
+                                                                <div class="col">
+                                                                    <div class="custom-control custom-checkbox mt-2">
+                                                                        <input type="checkbox" class="custom-control-input" id="checkMamaDta">
+                                                                        <label class="custom-control-label" for="checkMamaDta">Mama Direita</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col ">
+                                                                    <div class="form-inline justify-content-end">
+                                                                        <label class="mr-2" for="inlineFormCustomSelectPref">
+                                                                            <strong>
+                                                                                <u>Resultado:</u>
+                                                                            </strong>
+                                                                        </label>
+                                                                        <select class="custom-select" id="inlineFormCustomSelectPref">
+                                                                            <option selected>Choose...</option>
+                                                                            <option value="1">Benigno</option>
+                                                                            <option value="2">Maligno</option>
+                                                                            <option value="3">Inconclusivo</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="custom-control custom-radio">
+                                                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="customRadio1">CORE/CAAF</label>
+                                                                    </div>
+                                                                    <div class="form-group mt-2">
+                                                                        <!--<label for="exampleFormControlSelect2">Example multiple select</label>-->
+                                                                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                                                                            <option>ECOGRAFIA</option>
+                                                                            <option>ESTERIOTAXIA</option>
+                                                                            <option>VÁCUO</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="custom-control custom-radio">
+                                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="customRadio2">INCISIONAL</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col border">
+                                                            <div class="row pt-2">
+                                                                <div class="col">
+                                                                    <div class="custom-control custom-checkbox mt-2">
+                                                                        <input type="checkbox" class="custom-control-input" id="checkMamaEsq">
+                                                                        <label class="custom-control-label" for="checkMamaEsq">Mama Esquerda</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col ">
+                                                                    <div class="form-inline justify-content-end">
+                                                                        <label class="mr-2" for="inlineFormCustomSelectPref2">
+                                                                            <strong>
+                                                                                <u>Resultado:</u>
+                                                                            </strong>
+                                                                        </label>
+                                                                        <select class="custom-select" id="inlineFormCustomSelectPref2">
+                                                                            <option selected>Choose...</option>
+                                                                            <option value="1">Benigno</option>
+                                                                            <option value="2">Maligno</option>
+                                                                            <option value="3">Inconclusivo</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="custom-control custom-radio">
+                                                                        <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="customRadio5">CORE/CAAF</label>
+                                                                    </div>
+                                                                    <div class="form-group mt-2">
+                                                                        <!--<label for="exampleFormControlSelect2">Example multiple select</label>-->
+                                                                        <select multiple class="form-control" id="exampleFormControlSelect5">
+                                                                            <option>ECOGRAFIA</option>
+                                                                            <option>ESTERIOTAXIA</option>
+                                                                            <option>VÁCUO</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="custom-control custom-radio">
+                                                                        <input type="radio" id="customRadio6" name="customRadio" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="customRadio6">INCISIONAL</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-1">
+                                                        <div class="col border">
+                                                            <div class="row pt-2">
+                                                                <div class="col">
+                                                                    <div class="custom-control custom-checkbox mt-2">
+                                                                        <input type="checkbox" class="custom-control-input" id="checkAxilaDta">
+                                                                        <label class="custom-control-label" for="checkMamaDta">Axila Direita</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col ">
+                                                                    <div class="form-inline justify-content-end">
+                                                                        <label class="mr-2" for="inlineFormCustomSelectPref">
+                                                                            <strong>
+                                                                                <u>Resultado:</u>
+                                                                            </strong>
+                                                                        </label>
+                                                                        <select class="custom-select" id="inlineFormCustomSelectPref">
+                                                                            <option selected>Choose...</option>
+                                                                            <option value="1">Benigno</option>
+                                                                            <option value="2">Maligno</option>
+                                                                            <option value="3">Inconclusivo</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row mb-2">
+                                                                <div class="col">
+                                                                    <div class="custom-control custom-radio">
+                                                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="customRadio1">CORE/CAAF</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="custom-control custom-radio">
+                                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="customRadio2">INCISIONAL</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col border">
+                                                            <div class="row pt-2">
+                                                                <div class="col">
+                                                                    <div class="custom-control custom-checkbox mt-2">
+                                                                        <input type="checkbox" class="custom-control-input" id="checkAxilaEsq">
+                                                                        <label class="custom-control-label" for="checkAxilaEsq">Axila Esquerda</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col ">
+                                                                    <div class="form-inline justify-content-end">
+                                                                        <label class="mr-2" for="inlineFormCustomSelectPref2">
+                                                                            <strong>
+                                                                                <u>Resultado:</u>
+                                                                            </strong>
+                                                                        </label>
+                                                                        <select class="custom-select" id="inlineFormCustomSelectPref2">
+                                                                            <option selected>Choose...</option>
+                                                                            <option value="1">Benigno</option>
+                                                                            <option value="2">Maligno</option>
+                                                                            <option value="3">Inconclusivo</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row  mb-2">
+                                                                <div class="col">
+                                                                    <div class="custom-control custom-radio">
+                                                                        <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="customRadio5">CORE/CAAF</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="custom-control custom-radio">
+                                                                        <input type="radio" id="customRadio6" name="customRadio" class="custom-control-input">
+                                                                        <label class="custom-control-label" for="customRadio6">INCISIONAL</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="card">
-                                          <div class="card-header">
-                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                            Collapsible Group Item #2
-                                          </a>
-                                          </div>
-                                          <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                                            <div class="card-body">
-                                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            <div class="card-header">
+                                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                                    2ª Biopsia
+                                                </a>
                                             </div>
-                                          </div>
+                                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                                    ut aliquip ex ea commodo consequat.
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="card">
-                                          <div class="card-header">
-                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                              Collapsible Group Item #3
-                                            </a>
-                                          </div>
-                                          <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                            <div class="card-body">
-                                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            <div class="card-header">
+                                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                                    3ª Biopsia
+                                                </a>
                                             </div>
-                                          </div>
+                                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                                    ut aliquip ex ea commodo consequat.
+                                                </div>
+                                            </div>
                                         </div>
-                                      </div>
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="menu5" role="tabpanel" aria-labelledby="menu5-tab">...</div>
                                 <div class="tab-pane fade" id="menu6" role="tabpanel" aria-labelledby="menu6-tab">
-                                    
+
                                 </div>
                                 <div class="tab-pane fade" id="menu7" role="tabpanel" aria-labelledby="menu7-tab">...</div>
                                 <div class="tab-pane fade" id="menu8" role="tabpanel" aria-labelledby="menu8-tab">...</div>
-                                <div class="tab-pane fade" id="menu9" role="tabpanel" aria-labelledby="menu9-tab">...</div>
+                                <div class="tab-pane fade" id="menu9" role="tabpanel" aria-labelledby="menu9-tab">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-inline">
+                                                <div class="form-group ">
+                                                    <label for="dataFollowUp" class="mr-2">Data Consulta:</label>
+                                                    <input type="date" class="form-control" id="dataFollowUp">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="custom-control custom-checkbox">
+                                                <input class="custom-control-input" type="checkbox" id="gridCheck1">   
+                                                <label  for="gridCheck1" class="custom-control-label">VIVO SEM DOENÇA</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="custom-control custom-checkbox mt-1">
+                                                <input class="custom-control-input" type="checkbox" id="gridCheck2">   
+                                                <label  for="gridCheck2" class="custom-control-label">VIVO COM DOENÇA</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                    <label for="dataf1" class="mr-2"><u>DATA REC:</u></label>
+                                                    <input type="date" class="form-control form-control-sm" id="dataf1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="custom-control custom-checkbox mt-1">
+                                                <input class="custom-control-input" type="checkbox" id="gridCheck3">   
+                                                <label  for="gridCheck3" class="custom-control-label">MORTO SEM DOENÇA</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                    <label for="dataf2" class="mr-2"><u>DATA:</u></label>
+                                                    <input type="date" class="form-control form-control-sm" id="dataf2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                            <div class="col">
+                                                <div class="custom-control custom-checkbox mt-1">
+                                                    <input class="custom-control-input" type="checkbox" id="gridCheck4">   
+                                                    <label  for="gridCheck4" class="custom-control-label">MORTO COM DOENÇA</label>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-inline">
+                                                    <div class="form-group">
+                                                        <label for="dataf3" class="mr-2"><u>DATA REC:</u></label>
+                                                        <input type="date" class="form-control form-control-sm" id="dataf3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-inline">
+                                                    <div class="form-group">
+                                                        <label for="dataf4" class="mr-2"><u>DATA FAL:</u></label>
+                                                        <input type="date" class="form-control form-control-sm" id="dataf4">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
                             </div>
                         </form>
                     </div>
