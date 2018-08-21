@@ -150,9 +150,9 @@ footer {
 /* END FOOTER */
 
 /*DASHBOARD*/
-* {
-	/*box-sizing: border-box;*/
-}
+/** {
+	box-sizing: border-box;
+}*/
 
 body.hidden {
 	overflow: hidden;
