@@ -33,6 +33,16 @@ input[type="date"]::-webkit-outer-spin-button {
 
 
 /*BC RECORD APP - BOOTSTRAP EXTRA*/
+/*Temp - for hiding menu to show BC Record APP - TO BE DELETED...*/
+.pt-0px{
+	padding-top: 0px !important;
+}
+
+.mt-44px{
+	margin-top: 44px !important;
+}
+/*Temp - for hiding menu to show BC Record APP - TO BE DELETED...*/
+
 .w-2 {
 	width: 2% !important;
 }
@@ -164,7 +174,7 @@ body.hidden {
 	width: 100%;
 	background-color: #fff;
 	z-index: 3;
-	
+	/*display: none;*/
 	/*border-bottom: 3px solid #2d3d51;*/
 }
 /* logo in header(mobile version) and side-nav (tablet & desktop) */
@@ -307,6 +317,7 @@ body.hidden {
 	font-weight: 700;
 	color: #333;
 	font-size: 18px;
+	max-height: 44px;
 }
 /* Tablet + Desktop View*/
 @media screen and (min-width: 600px) {
@@ -398,6 +409,7 @@ body.hidden {
 	border-top-right-radius: 6px;
 	color: #617085;
 	font-weight: 600;
+	padding-top: 6px;
 }
 
 .widget .box {

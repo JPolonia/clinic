@@ -1,62 +1,70 @@
 <?php
-    function getAllPatients(){
-        global $conn;
-        
-        $stmt = $conn->prepare('SELECT *
-                                FROM BCRECORD.paciente
+function getAllPatients()
+{
+    global $conn;
+
+    $stmt = $conn->prepare('SELECT *
+                                FROM BCRECORD.db_pacientes
                                 ORDER BY nome');
-        $stmt->execute();
-        return $stmt->fetchAll();
-    }
+    $stmt->execute();
+    return $stmt->fetchAll();
+}
 
-    function getPatientById($id){
-        global $conn;
-        
-        $stmt = $conn->prepare('SELECT *
-                                FROM BCRECORD.paciente
-                                WHERE id = ?');
-        $stmt->execute(array($id));
-        return $stmt->fetch();
-    }
+function getPatientById($id)
+{
+    global $conn;
 
-    function getPatientIdByName($name){
-        global $conn;
-        
-        $stmt = $conn->prepare('SELECT code
+    $stmt = $conn->prepare('SELECT *
+                                FROM BCRECORD.db_pacientes
+                                WHERE id_paciente = ?');
+    $stmt->execute(array($id));
+    return $stmt->fetch();
+}
+
+
+//Old queries...
+function getPatientIdByName($name)
+{
+    global $conn;
+
+    $stmt = $conn->prepare('SELECT code
                                 FROM patient
                                 WHERE name = ?');
-        $stmt->execute(array($name));
-        return $stmt->fetch()['code'];
-    }
+    $stmt->execute(array($name));
+    return $stmt->fetch()['code'];
+}
 
-    function addPatient($name,$address) {
-		global $conn;
+function addPatient($name, $address)
+{
+    global $conn;
 
-		$stmt = $conn->prepare('INSERT INTO patient (code, name, address) 
+    $stmt = $conn->prepare('INSERT INTO patient (code, name, address) 
                                 VALUES (DEFAULT, ?,?)');
-		$stmt->execute(array($name,$address));
-	}
+    $stmt->execute(array($name, $address));
+}
 
-    function removePatient($code) {
-		global $conn;
+function removePatient($code)
+{
+    global $conn;
 
-		$stmt = $conn->prepare('DELETE FROM patient 
+    $stmt = $conn->prepare('DELETE FROM patient 
                                 WHERE code = ?');
-		$stmt->execute(array($code));
-	}
+    $stmt->execute(array($code));
+}
 
-    function editPatient($code,$name,$address)
-    {
-        global $conn;
-        $stmt = $conn->prepare('INSERT INTO patient (code, name, address) VALUES (?, ?,?)');
-		$stmt->execute(array($code,$name,$address));
-    }
+function editPatient($code, $name, $address)
+{
+    global $conn;
+    $stmt = $conn->prepare('INSERT INTO patient (code, name, address) VALUES (?, ?,?)');
+    $stmt->execute(array($code, $name, $address));
+}
 
-    function getProfileByID($patientID) {
-		global $conn;
+function getProfileByID($patientID)
+{
+    global $conn;
 
-		$stmt = $conn->prepare('SELECT * FROM patient WHERE id = ?');
-		$stmt->execute(array($patientID));
-		return $stmt->fetch();
-	}
+    $stmt = $conn->prepare('SELECT * FROM patient WHERE id = ?');
+    $stmt->execute(array($patientID));
+    return $stmt->fetch();
+}
 ?>

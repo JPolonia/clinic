@@ -1,12 +1,12 @@
-<div class="header">
-    <div class="logo">
+<div class="header" id="myheader">
+    <div class="logo" id="mylogo2">
         <i class="fa fa-heartbeat"></i>
         <span>BC RECORDS</span>
     </div>
-    <a href="#" class="nav-trigger"><span></span></a>
+    <a href="#" class="nav-trigger" id="menu_nav"><span></span></a>
 </div>
-<div class="side-nav">
-    <div class="logo">
+<div class="side-nav" id="mynav">
+    <div class="logo" id="mylogo">
         <i class="fa fa-heartbeat"></i>
         <span>BC RECORDS</span>
     </div>
@@ -50,3 +50,4 @@
         </div>
     </footer>
 </div>
+<a href="#" class="nav-trigger d-block mt-44px" id="navtrigger"><span style="background-color:#35475e;"></span></a>
