@@ -4,33 +4,49 @@
     <div class="input-group w-25 mt-1 ml-1 mr-2">
         <input disabled type="text" class="form-control form-control-sm px-2" name="nome" id="nome" placeholder="Nome do Paciente">
         <div class="input-group-append">
-            <button onclick="editMode(this,'nome')" class="input-group-text" id="basic-addon1" type="button" data-toggle="button" aria-pressed="false"><i
-                    class="fa fa-pencil"></i></button>
+            <button onclick="editMode(this,this.parentNode.previousSibling.previousSibling.id)" class="btn btn-sm btn-outline-secondary"
+                id="basic-addon1" type="button" data-toggle="button" aria-pressed="false"><i class="fa fa-pencil-square-o"></i></button>
         </div>
     </div>
 
     <label for="data_nasc">Data Nasc: </label>
     <div class="input-group w-12 mt-1 ml-1 mr-2">
         <input disabled type="date" class="form-control form-control-sm px-2" name="data_nasc" id="data_nasc" size="2">
-
+        <div class="input-group-append">
+            <button onclick="editMode(this,this.parentNode.previousSibling.previousSibling.id)" class="btn btn-sm btn-outline-secondary"
+                id="basic-addon1" type="button" data-toggle="button" aria-pressed="false"><i class="fa fa-pencil-square-o"></i></button>
+        </div>
     </div>
 
     <label for="sns">SNS: </label>
     <div class="input-group w-8  mt-1 ml-1 mr-2">
         <input disabled type="number" class="form-control form-control-sm px-2" name="sns" id="sns" placeholder="171577056">
-
+        <div class="input-group-append">
+            <button onclick="editMode(this,this.parentNode.previousSibling.previousSibling.id)" class="btn btn-sm btn-outline-secondary"
+                id="basic-addon1" type="button" data-toggle="button" aria-pressed="false"><i class="fa fa-pencil-square-o"></i></button>
+        </div>
     </div>
 
     <label for="data_1c">Data 1ºC: </label>
     <div class="input-group w-12  mt-1 ml-1 mr-2">
         <input disabled type="date" class="form-control form-control-sm px-2" name="data_1c" id="data_1c">
-
+        <div class="input-group-append">
+            <button onclick="editMode(this,this.parentNode.previousSibling.previousSibling.id)" class="btn btn-sm btn-outline-secondary"
+                id="basic-addon1" type="button" data-toggle="button" aria-pressed="false"><i class="fa fa-pencil-square-o"></i></button>
+        </div>
     </div>
 
-    <label for="id_processo">Nº Processo: </label>
+    <label for="n_processo">Nº Processo: </label>
     <div class="input-group w-12 mt-1 ml-1 ">
-        <input disabled type="number" class="form-control form-control-sm px-2 w-40 mr-1" name="id_processo" id="id_processo" placeholder="11000">
-        <input disabled type="number" class="form-control form-control-sm px-2 w-15" name="n_proc" id="n_proc" placeholder="1">
+        <input disabled type="number" class="form-control form-control-sm px-2 w-40" name="n_processo" id="n_processo"
+            placeholder="11000">
+        <input disabled type="number" class="form-control form-control-sm px-2 w-15" name="n_proc" id="n_proc"
+            placeholder="1">
+        <div class="input-group-append">
+            <button onclick="editMode(this,this.parentNode.previousSibling.previousSibling.id)" class="btn btn-sm btn-outline-secondary"
+                id="basic-addon1" type="button" data-toggle="button" aria-pressed="false"><i class="fa fa-pencil-square-o"></i></button>
+        </div>
+
     </div>
 
 </div>

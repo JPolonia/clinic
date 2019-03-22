@@ -1,6 +1,9 @@
+html { /*overflow: hidden; */}
+
 body{     
     background: -webkit-gradient(linear, left top, left bottom, from(#032a3a), to(#23538a)) fixed;
-    background-image: url("images/bg.jpeg");
+	/*background-image: url("images/bg.jpeg");*/
+	background-color: rgb(238, 241, 247);
     background-size: cover;
     font-family: "Open Sans", sans-serif;
 

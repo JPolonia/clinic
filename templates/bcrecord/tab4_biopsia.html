@@ -1,15 +1,3 @@
-<div id="accordionBio">
-    <!-- Cards will be added here... (from template)-->
-</div>
-
-<div class="row">
-    <div class="col">
-        <button id="buttonNewBio" class="btn btn-info btn-sm float-right mt-2" type="button" form="formProcesso">
-            Nova Biopsia &nbsp;
-        </button>
-    </div>
-</div>
-
 <!--BEGIN TEMPLATE BIOPSIA CARD-->
 
 <div class="card d-none" data-type="template_biopsia">
@@ -21,18 +9,29 @@
     <div id="collapseOne" class="collapse show" data-parent="#accordionBio">
         <div class="card-body">
             <div class="row">
-                <div class="col-6">
+                <div class="col-3">
                     <div class="form-inline">
                         <div class="form-group ">
-                            <label for="data_biopsia" class="mr-2">Data:</label>
-                            <input type="date" class="form-control" id="data_biopsia" name="data_biopsia">
+                            <label for="data_biopsia" class="mr-2">Data Biopsia:</label>
+                            <input type="date" class="form-control form-control-sm" id="data_biopsia" name="data_biopsia">
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-3">
+                    <div class="form-inline">
+                        <div class="form-group ">
+                            <label for="data_resultado" class="mr-2">Data Resultado:</label>
+                            <input type="date" class="form-control form-control-sm" id="data_resultado" name="data_resultado">
                         </div>
                     </div>
                 </div>
 
                 <div class="col">
                     <div class="custom-control custom-checkbox mt-2 justify-content-end mb-1">
-                        <input onchange="bioFieldsetChange(this,'MamaDta')" type="checkbox" class="custom-control-input" id="checkMamaDta" name="checkMamaDta">
+                        <input onchange="FieldsetChange(this,'MamaDta')" type="checkbox" class="custom-control-input"
+                            id="checkMamaDta" name="checkMamaDta">
                         <label class="custom-control-label" for="checkMamaDta">
                             Mama Dta
                         </label>
@@ -41,7 +40,8 @@
 
                 <div class="col">
                     <div class="custom-control custom-checkbox mt-2 justify-content-end mb-1">
-                        <input onchange="bioFieldsetChange(this,'AxilaDta')" type="checkbox" class="custom-control-input" id="checkAxilaDta" name="checkAxilaDta">
+                        <input onchange="FieldsetChange(this,'AxilaDta')" type="checkbox" class="custom-control-input"
+                            id="checkAxilaDta" name="checkAxilaDta">
                         <label class="custom-control-label" for="checkAxilaDta">
                             Axila Dta
                         </label>
@@ -50,7 +50,8 @@
 
                 <div class="col">
                     <div class="custom-control custom-checkbox mt-2 justify-content-end mb-1">
-                        <input onchange="bioFieldsetChange(this,'MamaEsq')" type="checkbox" class="custom-control-input" id="checkMamaEsq" name="checkMamaEsq">
+                        <input onchange="FieldsetChange(this,'MamaEsq')" type="checkbox" class="custom-control-input"
+                            id="checkMamaEsq" name="checkMamaEsq">
                         <label class="custom-control-label" for="checkMamaEsq">
                             Mama Esq
                         </label>
@@ -59,7 +60,8 @@
 
                 <div class="col">
                     <div class="custom-control custom-checkbox mt-2 justify-content-end mb-1">
-                        <input onchange="bioFieldsetChange(this,'AxilaEsq')" type="checkbox" class="custom-control-input" id="checkAxilaEsq" name="checkAxilaEsq">
+                        <input onchange="FieldsetChange(this,'AxilaEsq')" type="checkbox" class="custom-control-input"
+                            id="checkAxilaEsq" name="checkAxilaEsq">
                         <label class="custom-control-label" for="checkAxilaEsq">
                             Axila Esq
                         </label>
@@ -70,7 +72,7 @@
             <hr>
 
             <div class="row">
-                <!-- MAMA DRT-->
+                <!-- MAMA Dta-->
                 <div class="col border d-none m-1 border-info">
                     <fieldset id="MamaDta">
                         <div class="row pt-2">
@@ -79,13 +81,13 @@
                             </div>
                             <div class="col ">
                                 <div class="form-inline justify-content-end mb-1">
-                                    <label class="mr-2" for="resultadoSelectMamaDrt">
+                                    <label class="mr-2" for="resultadoSelectMamaDta">
                                         <strong>
                                             <u>Resultado:</u>
                                         </strong>
                                     </label>
-                                    <select class="custom-select" id="resultadoSelectMamaDrt" name="resultadoSelectMamaDrt">
-                                        <option selected>-</option>
+                                    <select class="form-control form-control-sm" id="resultadoSelectMamaDta" name="resultadoSelectMamaDta">
+                                        <option value="0">-</option>
                                         <option value="1">Benigno</option>
                                         <option value="2">Maligno</option>
                                         <option value="3">Inconclusivo</option>
@@ -96,47 +98,28 @@
                         <hr>
                         <div class="row">
                             <div class="col">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="CORE_CAAF_MamaDrt" name="groupMamaDrt" class="custom-control-input">
-                                            <label class="custom-control-label" for="CORE_CAAF_MamaDrt">CORE</label>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="CAAF_MamaDrt" name="groupMamaDrt" class="custom-control-input">
-                                            <label class="custom-control-label" for="CAAF_MamaDrt">CAAF</label>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="form-group mt-2">
-                                    <label for="exampleFormControlSelect2">Forma de Guia</label>
-                                    <select onclick="bioCORECAAF('CORE_CAAF_MamaDrt')" multiple class="form-control" name="tipo_CORE_CAAF_MamaDrt" id="tipo_CORE_CAAF_MamaDrt">
-                                        <option>ECOGRAFIA</option>
-                                        <option>ESTERIOTAXIA</option>
-                                        <option>Não Guiada</option>
+                                <div class="form-group">
+                                    <label for="tipoBiopsiaSelectMamaDta">Tipo/Técnica:</label>
+                                    <select class="form-control form-control-sm" id="tipoBiopsiaSelectMamaDta" name="tipoBiopsiaSelectMamaDta">
+                                        <option value="0">-</option>
+                                        <option value="1">CORE</option>
+                                        <option value="2">CAAF</option>
+                                        <option value="3">BAV</option>
+                                        <option value="4">INCISIONAL</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="BAV_MamaDrt" name="groupMamaDrt" class="custom-control-input">
-                                            <label class="custom-control-label" for="BAV_MamaDrt">BAV</label>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="custom-control custom-radio">
-                                            <input onclick="bioINCISIONAL('tipo_CORE_CAAF_MamaDrt')" type="radio" id="INCISIONAL_MamaDrt" name="groupMamaDrt" class="custom-control-input">
-                                            <label class="custom-control-label" for="INCISIONAL_MamaDrt">INCISIONAL</label>
-                                        </div>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="formaBiopsiaSelectMamaDta">Forma de Guia:</label>
+                                    <select class="form-control form-control-sm" id="formaBiopsiaSelectMamaDta" name="formaBiopsiaSelectMamaDta">
+                                        <option value="0">-</option>
+                                        <option value="1">ECOGRAFIA</option>
+                                        <option value="2">ESTERIOTAXIA</option>
+                                        <option value="3">Não Guiada</option>
+                                    </select>
                                 </div>
                             </div>
-
                         </div>
                     </fieldset>
                 </div>
@@ -155,8 +138,8 @@
                                             <u>Resultado:</u>
                                         </strong>
                                     </label>
-                                    <select class="custom-select" id="resultadoSelectMamaEsq" name="resultadoSelectMamaEsq">
-                                        <option selected>-</option>
+                                    <select class="form-control form-control-sm" id="resultadoSelectMamaEsq" name="resultadoSelectMamaEsq">
+                                        <option value="0">-</option>
                                         <option value="1">Benigno</option>
                                         <option value="2">Maligno</option>
                                         <option value="3">Inconclusivo</option>
@@ -167,23 +150,26 @@
                         <hr>
                         <div class="row">
                             <div class="col">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="CORE_CAAF_MamaEsq" name="groupMamaEsq" class="custom-control-input">
-                                    <label class="custom-control-label" for="CORE_CAAF_MamaEsq">CORE/CAAF</label>
-                                </div>
-                                <div class="form-group mt-2">
-                                    <!--<label for="exampleFormControlSelect2">Example multiple select</label>-->
-                                    <select onclick="bioCORECAAF('CORE_CAAF_MamaEsq')" multiple class="form-control" id="tipo_CORE_CAAF_MamaEsq" name="tipo_CORE_CAAF_MamaEsq">
-                                        <option>ECOGRAFIA</option>
-                                        <option>ESTERIOTAXIA</option>
-                                        <option>Não Guiada</option>
+                                <div class="form-group">
+                                    <label for="tipoBiopsiaSelectMamaEsq">Tipo/Técnica:</label>
+                                    <select class="form-control form-control-sm" id="tipoBiopsiaSelectMamaEsq" name="tipoBiopsiaSelectMamaEsq">
+                                        <option value="0">-</option>
+                                        <option value="1">CORE</option>
+                                        <option value="2">CAAF</option>
+                                        <option value="3">BAV</option>
+                                        <option value="4">INCISIONAL</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="custom-control custom-radio">
-                                    <input onclick="bioINCISIONAL('tipo_CORE_CAAF_MamaEsq')" type="radio" id="INCISIONAL_MamaEsq" name="groupMamaEsq" class="custom-control-input">
-                                    <label class="custom-control-label" for="INCISIONAL_MamaEsq">INCISIONAL</label>
+                                <div class="form-group">
+                                    <label for="formaBiopsiaSelectMamaEsq">Forma de Guia:</label>
+                                    <select class="form-control form-control-sm" id="formaBiopsiaSelectMamaEsq" name="formaBiopsiaSelectMamaEsq">
+                                        <option value="0">-</option>
+                                        <option value="1">ECOGRAFIA</option>
+                                        <option value="2">ESTERIOTAXIA</option>
+                                        <option value="3">Não Guiada</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -191,7 +177,7 @@
                 </div>
             </div>
             <div class="row">
-                <!-- AXILA DRT-->
+                <!-- AXILA Dta-->
                 <div class="col border d-none m-1 border-info">
                     <fieldset id="AxilaDta">
                         <div class="row pt-2">
@@ -200,13 +186,13 @@
                             </div>
                             <div class="col ">
                                 <div class="form-inline justify-content-end">
-                                    <label class="mr-2" for="resultadoSelectAxilaDrt">
+                                    <label class="mr-2" for="resultadoSelectAxilaDta">
                                         <strong>
                                             <u>Resultado:</u>
                                         </strong>
                                     </label>
-                                    <select class="custom-select" id="resultadoSelectAxilaDrt" name="resultadoSelectAxilaDrt">
-                                        <option selected>-</option>
+                                    <select class="form-control form-control-sm" id="resultadoSelectAxilaDta" name="resultadoSelectAxilaDta">
+                                        <option value="0">-</option>
                                         <option value="1">Benigno</option>
                                         <option value="2">Maligno</option>
                                         <option value="3">Inconclusivo</option>
@@ -217,15 +203,15 @@
                         <hr>
                         <div class="row mb-2">
                             <div class="col">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="CORE_CAAF_AxilaDrt" name="groupAxilaDrt" class="custom-control-input">
-                                    <label class="custom-control-label" for="CORE_CAAF_AxilaDrt">CORE/CAAF</label>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="INCISIONAL_AxilaDrt" name="groupAxilaDrt" class="custom-control-input">
-                                    <label class="custom-control-label" for="INCISIONAL_AxilaDrt">INCISIONAL</label>
+                                <div class="form-group">
+                                    <label for="tipoBiopsiaSelectAxilaDta">Tipo/Técnica:</label>
+                                    <select class="form-control form-control-sm" id="tipoBiopsiaSelectAxilaDta" name="tipoBiopsiaSelectAxilaDta">
+                                        <option value="0">-</option>
+                                        <option value="1">CORE</option>
+                                        <option value="2">CAAF</option>
+                                        <option value="3">BAV</option>
+                                        <option value="4">INCISIONAL</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -238,15 +224,15 @@
                             <div class="col">
                                 <legend class="mb-0">Axila Esquerda</legend>
                             </div>
-                            <div class="col ">
+                            <div class="col">
                                 <div class="form-inline justify-content-end">
                                     <label class="mr-2" for="resultadoSelectAxilaEsq">
                                         <strong>
                                             <u>Resultado:</u>
                                         </strong>
                                     </label>
-                                    <select class="custom-select" id="resultadoSelectAxilaEsq" name="resultadoSelectAxilaEsq">
-                                        <option selected>-</option>
+                                    <select class="form-control form-control-sm" id="resultadoSelectAxilaEsq" name="resultadoSelectAxilaEsq">
+                                        <option value="0">-</option>
                                         <option value="1">Benigno</option>
                                         <option value="2">Maligno</option>
                                         <option value="3">Inconclusivo</option>
@@ -257,15 +243,15 @@
                         <hr>
                         <div class="row  mb-2">
                             <div class="col">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="CORE_CAAF_AxilaEsq" name="groupAxilaEsq" class="custom-control-input">
-                                    <label class="custom-control-label" for="CORE_CAAF_AxilaEsq">CORE/CAAF</label>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="INCISIONAL_AxilaEsq" name="groupAxilaEsq" class="custom-control-input">
-                                    <label class="custom-control-label" for="INCISIONAL_AxilaEsq">INCISIONAL</label>
+                                <div class="form-group">
+                                    <label for="tipoBiopsiaSelectAxilaEsq">Tipo/Técnica:</label>
+                                    <select class="form-control form-control-sm" id="tipoBiopsiaSelectAxilaEsq" name="tipoBiopsiaSelectAxilaEsq">
+                                        <option value="0">-</option>
+                                        <option value="1">CORE</option>
+                                        <option value="2">CAAF</option>
+                                        <option value="3">BAV</option>
+                                        <option value="4">INCISIONAL</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -276,3 +262,17 @@
     </div>
 </div>
 <!--END TEMPLATE BIOPSIA CARD-->
+
+
+
+<div id="accordionBio">
+    <!-- Cards will be added here... (from template)-->
+</div>
+
+<div class="row">
+    <div class="col">
+        <button id="buttonNewBio" class="btn btn-info btn-sm float-right mt-2" type="button" form="formProcesso">
+            Nova Biopsia &nbsp;
+        </button>
+    </div>
+</div>

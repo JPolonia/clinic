@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col">
         <div class="custom-control custom-checkbox mt-2 justify-content-end mb-1">
-            <input onchange="rastreioFieldsetChange(this,'fldsetRastreio')" type="checkbox" class="custom-control-input" id="checkRastreio"
+            <input onchange="FieldsetChange(this,'fldsetRastreio')" type="checkbox" class="custom-control-input" id="checkRastreio"
                 name="checkRastreio">
             <label class="custom-control-label" for="checkRastreio">
                 Programa de Rastreio de Cancro da Mama
@@ -13,22 +13,23 @@
     <hr>
     <div class="row">
         <div class="col">
-            <div class="form-group mt-4">
+            <div class="form-group mt-3">
                 <label for="n_conc_volta">Identificação(Nº/Conc./Volta):</label>
-                <input type="text" class="form-control" name="n_conc_volta" id="n_conc_volta" placeholder="Ex:10023/Porto/203">
+                <input type="text" class="form-control form-control-sm" name="n_conc_volta" id="n_conc_volta"
+                    placeholder="Ex:10023/Porto/203">
             </div>
         </div>
         <div class="col">
             <div class="form-inline">
                 <div class="form-group">
                     <label for="data_afericao" class="mr-2">Data de Aferição:</label>
-                    <input type="date" class="form-control" name="data_afericao" id="data_afericao">
+                    <input type="date" class="form-control form-control-sm" name="data_afericao" id="data_afericao">
                 </div>
             </div>
             <div class="form-inline">
                 <div class="form-group mt-3">
                     <label for="data_rastreio" class="mr-2">Data de Rastreio:</label>
-                    <input type="date" class="form-control" name="data_rastreio" id="data_rastreio">
+                    <input type="date" class="form-control form-control-sm" name="data_rastreio" id="data_rastreio">
                 </div>
             </div>
         </div>
@@ -38,22 +39,24 @@
 <div class="row ">
     <div class="col">
         <div class="form-group row">
-            <label for="morada" class="col-2 col-form-label text-right">Residência:</label>
+            <label for="morada" class="col-2 col-form-label text-right pt-1">Residência:</label>
             <div class="col-10">
-                <input type="text" class="form-control" name="morada" id="morada" placeholder="Ex:Av.Oliveira Martins 69B">
+                <input type="text" class="form-control form-control-sm" name="morada" id="morada" placeholder="Ex:Av.Oliveira Martins 69B">
             </div>
         </div>
         <div class="form-group row">
-            <label for="idade" class="col-2 col-form-label text-right">Idade:</label>
+            <label for="idade" class="col-2 col-form-label text-right pt-1">Idade:</label>
             <div class="col-10">
-                <input disabled type="number" class="form-control mw-5 min-w-45px" name="idade" id="idade" placeholder="50">
+                <input disabled type="number" class="form-control form-control-sm mw-5 min-w-45px" name="idade" id="idade"
+                    placeholder="50">
             </div>
         </div>
         <div class="form-group row">
-            <label for="estado_civil" class="col-2 col-form-label text-right">Estado Civil:
+            <label for="estado_civil" class="col-2 col-form-label text-right pt-1">Estado Civil:
             </label>
             <div class="col-10">
-                <input type="text" class="form-control mw-20" name="estado_civil" id="estado_civil" placeholder="Casado">
+                <input type="text" class="form-control form-control-sm mw-20" name="estado_civil" id="estado_civil"
+                    placeholder="Casado">
             </div>
         </div>
     </div>

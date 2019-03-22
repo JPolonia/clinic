@@ -22,7 +22,7 @@
 					//echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>';
 			echo '<script src="js\bootstrap.bundle.js" ></script>';
 			echo '<script src="js\bootstrap-table.js" ></script>';
-			echo '<script src="js\bcrecord.js?9" defer></script>';
+			echo '<script src="js\bcrecord.js?3" defer></script>';
 			break;
 		default:
 	}

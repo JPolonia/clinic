@@ -9,7 +9,7 @@
     <?
 } ?>
     <form method="post" action="action_login.php">
-        <input type="text" name="username" placeholder="Patient-ID/Medic-ID" value="<?= $_SESSION[form_values][username] ?>" />
+        <input type="text" name="username" placeholder="Patient-ID/Medic-ID" value="<?= $_SESSION[form_values][username] ?>" required autofocus/>
         <input type="password" name="password" placeholder="Password" />
         <input type="submit" id="login-btn" name="login" value="Login" />
     </form>

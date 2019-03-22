@@ -1,0 +1,220 @@
+<!--BEGIN TEMPLATE CIRURGIA CARD-->
+<div class="card d-none" data-type="template_cirurgia">
+    <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOneCir">
+            1ª Cirurgia
+        </a>
+    </div>
+    <div id="collapseOneCir" class="collapse show" data-parent="#accordionCir">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-inline">
+                        <div class="form-group ">
+                            <label for="data_cirurgia" class="mr-2">Data:</label>
+                            <input type="date" class="form-control form-control-sm" id="data_cirurgia">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-inline">
+                        <label class="mr-2" for="lic">
+                            <strong>
+                                <u>LIC:</u>
+                            </strong>
+                        </label>
+                        <select class="form-control form-control-sm" id="lic" name="lic">
+                            <option value="0">-</option>
+                            <option value="1">Não</option>
+                            <option value="2">Radioisotopo</option>
+                            <option value="3">Arpão</option>
+                            <option value="4">Outra...</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="custom-control custom-checkbox mt-2 justify-content-end mb-1">
+                        <input onchange="FieldsetChange(this,'CirMamaDta')" type="checkbox" class="custom-control-input"
+                            id="checkCirMamaDta" name="checkCirMamaDta">
+                        <label class="custom-control-label" for="checkCirMamaDta">
+                            Mama Dta
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="custom-control custom-checkbox mt-2 justify-content-end mb-1">
+                        <input onchange="FieldsetChange(this,'CirAxilaDta')" type="checkbox" class="custom-control-input"
+                            id="checkCirAxilaDta" name="checkCirAxilaDta">
+                        <label class="custom-control-label" for="checkCirAxilaDta">
+                            Axila Dta
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="custom-control custom-checkbox mt-2 justify-content-end mb-1">
+                        <input onchange="FieldsetChange(this,'CirMamaEsq')" type="checkbox" class="custom-control-input"
+                            id="checkCirMamaEsq" name="checkCirMamaEsq">
+                        <label class="custom-control-label" for="checkCirMamaEsq">
+                            Mama Esq
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="custom-control custom-checkbox mt-2 justify-content-end mb-1">
+                        <input onchange="FieldsetChange(this,'CirAxilaEsq')" type="checkbox" class="custom-control-input"
+                            id="checkCirAxilaEsq" name="checkCirAxilaEsq">
+                        <label class="custom-control-label" for="checkCirAxilaEsq">
+                            Axila Esq
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <!-- MAMA Dta-->
+                <div class="col border d-none m-1 border-info">
+                    <fieldset id="CirMamaDta">
+                        <div class="row pt-2">
+                            <div class="col">
+                                <legend class="mb-0">Mama Direita</legend>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="tecnicaCirSelectMamaDta">Técnica:</label>
+                                    <select class="form-control form-control-sm" id="tecnicaCirSelectMamaDta" name="tecnicaCirSelectMamaDta">
+                                        <option value="0">-</option>
+                                        <option value="1">CONSERVADORA</option>
+                                        <option value="2">MASTECTOMIA</option>
+                                        <option value="3">MRM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="reconstrucaoCirSelectMamaDta">Reconstrução:</label>
+                                    <select class="form-control form-control-sm" id="reconstrucaoCirSelectMamaDta" name="reconstrucaoCirSelectMamaDta">
+                                        <option value="0">-</option>
+                                        <option value="1">NÃO</option>
+                                        <option value="2">PROTESE</option>
+                                        <option value="3">EXPANSOR</option>
+                                        <option value="4">TRAM</option>
+                                        <option value="5">GD</option>
+                                        <option value="6">OUTRA</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!-- MAMA ESQ-->
+                <div class="col border d-none m-1 border-info">
+                    <fieldset id="CirMamaEsq">
+                        <div class="row pt-2">
+                            <div class="col">
+                                <legend class="mb-0">Mama Esquerda</legend>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="tecnicaCirSelectMamaEsq">Técnica:</label>
+                                    <select class="form-control form-control-sm" id="tecnicaCirSelectMamaEsq" name="tecnicaCirSelectMamaEsq">
+                                        <option value="0">-</option>
+                                        <option value="1">CONSERVADORA</option>
+                                        <option value="3">MASTECTOMIA</option>
+                                        <option value="3">MRM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="reconstrucaoCirSelectMamaEsq">Reconstrução:</label>
+                                    <select class="form-control form-control-sm" id="reconstrucaoCirSelectMamaEsq" name="reconstrucaoCirSelectMamaEsq">
+                                        <option value="0">-</option>
+                                        <option value="1">NÃO</option>
+                                        <option value="2">PROTESE</option>
+                                        <option value="3">EXPANSOR</option>
+                                        <option value="4">TRAM</option>
+                                        <option value="5">GD</option>
+                                        <option value="6">OUTRA</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <!-- AXILA Dta-->
+                <div class="col border d-none m-1 border-info">
+                    <fieldset id="CirAxilaDta">
+                        <div class="row pt-2">
+                            <div class="col">
+                                <legend class="mb-0">Axila Direita</legend>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row mb-2">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="tecnicaCirSelectAxilaDta">Técnica:</label>
+                                    <select class="form-control form-control-sm" id="tecnicaCirSelectAxilaDta" name="tecnicaCirSelectAxilaDta">
+                                        <option value="0">-</option>
+                                        <option value="1">BGS</option>
+                                        <option value="2">EA</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!-- AXILA ESQ-->
+                <div class="col border d-none m-1 border-info">
+                    <fieldset id="CirAxilaEsq">
+                        <div class="row pt-2">
+                            <div class="col">
+                                <legend class="mb-0">Axila Esquerda</legend>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row  mb-2">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="tecnicaCirSelectAxilaEsq">Técnica:</label>
+                                    <select class="form-control form-control-sm" id="tecnicaCirSelectAxilaEsq" name="tecnicaCirSelectAxilaEsq">
+                                        <option value="0">-</option>
+                                        <option value="1">BGS</option>
+                                        <option value="2">EA</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END TEMPLATE CIRURGIA CARD-->
+
+<div id="accordionCir">
+    <!-- Cards will be added here... (from template)-->
+</div>
+
+<div class="row">
+    <div class="col">
+        <button id="buttonNewCir" class="btn btn-info btn-sm float-right mt-2" type="button" form="formProcesso">
+            Nova Cirurgia &nbsp;
+        </button>
+    </div>
+</div>

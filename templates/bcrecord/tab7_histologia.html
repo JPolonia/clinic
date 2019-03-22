@@ -1,0 +1,211 @@
+<fieldset id="tumor" class="mb-4">
+    <legend class="mb-0">Tumor</legend>
+    <hr>
+    <div class="row">
+        <div class="col-2">
+            <div class="form-group">
+                <label for="tipohistologico" class="">Tipo Histológico:</label>
+                <select class="form-control form-control-sm" id="tipohistologico" name="tipohistologico">
+                    <option value="0">-</option>
+                    <option value="1">CDIS</option>
+                    <option value="2">CLIS</option>
+                    <option value="3">INVASOR SOE</option>
+                    <option value="4">DUCTAL</option>
+                    <option value="5">LOBULAR</option>
+                    <option value="6">MEDULAR</option>
+                    <option value="7">MUCINOSO</option>
+                    <option value="8">OUTRO...</option>
+                </select>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="tamanho_tumor" class="">Tamanho(mm):</label>
+                <input type="number" class="form-control form-control-sm" id="tamanho_tumor" name="tamanho_tumor">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="grau" class="">Grau:</label>
+                <select class="form-control form-control-sm" id="grau" name="grau">
+                    <option value="0">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">Desc.</option>
+                </select>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="re_tumor" class="">RE(%):</label>
+                <input type="number" class="form-control form-control-sm" id="re_tumor" name="re_tumor">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="rp_tumor" class="">RP(%):</label>
+                <input type="number" class="form-control form-control-sm" id="rp_tumor" name="rp_tumor">
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="Ki67_tumor" class="">Ki67:</label>
+                <input type="number" class="form-control form-control-sm" id="Ki67_tumor" name="Ki67_tumor">
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="form-group">
+                <label for="her2_tumor" class="">Her 2:</label>
+                <select class="form-control form-control-sm" id="her2_tumor" name="her2_tumor">
+                    <option value="0">-</option>
+                    <option value="1">Positivo</option>
+                    <option value="2">Negativo</option>
+                    <option value="3">Desconhecido</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="form-group">
+                <label for="margem_tumor" class="">Margem:</label>
+                <select class="form-control form-control-sm" id="margem_tumor" name="margem_tumor">
+                    <option value="0">-</option>
+                    <option value="1">Intersectada</option>
+                    <option value="2">&lt; 1 mm</option>
+                    <option value="3">1-2 mm</option>
+                    <option value="4">&gt; 2 mm</option>
+                    <option value="5">Não Registado</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+
+<fieldset id="ganglios">
+    <legend class="mb-0">Gânglios</legend>
+    <hr>
+    <div class="row">
+        <div class="col-6">
+            <h5><u>SN</u></h5>
+            <div class="row">
+                <div class="col-10 pr-1">
+                    <div class="form-group">
+                        <label for="extemporaneoSelect" class="">Extemporâneo</label>
+                        <select class="form-control form-control-sm" id="extemporaneoSelect" name="extemporaneoSelect">
+                            <option value="0">-</option>
+                            <option value="1">OSNA</option>
+                            <option value="2">HISTOLOGIA</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-2 pl-1">
+                    <div class="form-group">
+                        <label for="extemporaneoNum" class="">Nº:</label>
+                        <input type="number" class="form-control form-control-sm" id="extemporaneoNum" name="extemporaneoNum">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <h5><u>Esvaziamento Axilar</u></h5>
+            <div class="row">
+                <div class="col-3 pr-1">
+                    <div class="form-group">
+                        <label for="ea_total" class="">Nº Total:</label>
+                        <input type="number" class="form-control form-control-sm" id="ea_total" name="ea_total">
+                    </div>
+                </div>
+                <div class="col-3 pl-1 pr-1">
+                    <div class="form-group">
+                        <label for="ea_invadidos" class="">Nº Invadidos:</label>
+                        <input type="number" class="form-control form-control-sm" id="ea_invadidos" name="ea_invadidos">
+                    </div>
+                </div>
+                <div class="col-6 pl-1">
+                    <div class="form-group">
+                        <label for="metastases" class="">Resultado:</label>
+                        <select class="form-control form-control-sm" id="metastases" name="metastases">
+                            <option value="0">-</option>
+                            <option value="1">NEGATIVO</option>
+                            <option value="2">CTI</option>
+                            <option value="3">MICROMTX</option>
+                            <option value="4">MACROMTX</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<hr>
+
+<div class="row">
+    <div class="col-1">
+        <div class="form-inline float-left">
+            <div class="form-group">
+                <label for="t" class="mr-2">T:</label>
+                <select class="form-control form-control-sm mw-50" id="t" name="t">
+                    <option value="0">-</option>
+                    <option value="1">TX</option>
+                    <option value="2">T0</option>
+                    <option value="3">Tis</option>
+                    <option value="4">T1mi</option>
+                    <option value="4">T1a</option>
+                    <option value="4">T1b</option>
+                    <option value="4">T1c</option>
+                    <option value="4">T2</option>
+                    <option value="4">T3</option>
+                    <option value="4">T4a</option>
+                    <option value="4">T4b</option>
+                    <option value="4">T4c</option>
+                    <option value="4">T4d</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-1">
+        <div class="form-inline float-left">
+            <div class="form-group">
+                <label for="t" class="mr-2">N:</label>
+                <select class="form-control form-control-sm mw-50" id="t" name="t">
+                    <option value="0">-</option>
+                    <option value="1">NX</option>
+                    <option value="2">N0</option>
+                    <option value="3">N1mi</option>
+                    <option value="4">N1a</option>
+                    <option value="4">N1b</option>
+                    <option value="4">N1c</option>
+                    <option value="4">N2a</option>
+                    <option value="4">N2b</option>
+                    <option value="4">N3a</option>
+                    <option value="4">N3b</option>
+                    <option value="4">N3c</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-1">
+        <div class="form-inline float-left">
+            <div class="form-group">
+                <label for="t" class="mr-2">M:</label>
+                <select class="form-control form-control-sm mw-50" id="t" name="t">
+                    <option value="0">-</option>
+                    <option value="1">M0</option>
+                    <option value="2">M1</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col ">
+        <div class="form-inline float-right ">
+            <div class="form-group">
+                <label for="estadio" class="mr-2"><u>ESTADIO:</u></label>
+                <input type="text" class="form-control form-control-sm" name="estadio" id="estadio">
+            </div>
+        </div>
+    </div>
+</div>
